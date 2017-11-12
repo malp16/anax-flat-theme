@@ -1,4 +1,4 @@
-/** 
+/**
 * Anax Flat theme.
 */
 @import url(modules.less);
@@ -19,3 +19,36 @@
         vertical-align: bottom;
     }
 }
+
+.sidebar {
+    li {
+        padding: 5px;
+    }
+    padding-bottom: 150px;
+
+}
+@treeTrunkColor:#420807;
+@redLeafColor:	#BD4306;
+@orangeLeafColor: #F5672B;
+@yellowishLeafColor:#D86C0A;
+@fadedYellowColor:#FAC947;
+html {
+    background-color: @fadedYellowColor;
+}
+main, .sidebar, .footer, .breadcrumb-wrap {
+    a {
+        color:@treeTrunkColor;
+    }
+    a:visited {
+        color:@redLeafColor;
+    }
+}
+/*.row {                        //Ändrar färg på länkarna men också i menyer
+    a {
+        color:@treeTrunkColor;
+    }
+    a:visited {
+        color:@redLeafColor;
+    }
+
+}*/

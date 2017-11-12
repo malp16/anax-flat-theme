@@ -1,0 +1,45 @@
+/** --------------------------------------------------------------
+ *  Header
+ */
+
+// Size of max navbar button
+/*//Flyttar navbar till my-own-responsive-menu, eftersom uppgiftsinstruktioner
+// anger att menyer ska hanteras i samma less modul
+.rm-max .rm-small .rm-button {
+    font-size: 2em;
+}
+
+@maxButtonFontSize: 2em;
+@treeTrunkColor:#420807;
+
+// Style navbar
+.rm-desktop li {
+    //background-color: #F5672B;
+}
+
+//@navbarItemBgColor: #F5672B;
+*/
+
+// Size each item in the header
+.site-logo-text,
+.navbar2, //har försökt flytta denna till annnan fil (eftersom menyer skulle vra i en egen modul), men då fungerar inte länken till index)
+.profile {
+    float: left;
+    width: 30%;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.site-header {
+    height: 100px;
+}
+
+// Site title
+.site-logo-text {
+    font-size: 2em;
+    color:	@treeTrunkColor;
+    a {
+        text-decoration: none;
+        color:	@treeTrunkColor;
+    }
+}
