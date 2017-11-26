@@ -20,10 +20,14 @@ img {
 }
 
 
-@media screen and (max-width: 700px) { //Ändrat från 750
+@media screen and (max-width: 750px) { 
     .sidebar {
         //width: 100%;
         display: none;
+    }
+    .main {
+        .column(10);
+        .push(1);
     }
 }
 
@@ -42,5 +46,9 @@ img {
 
      .navbar2 {
          display: none;
+     }
+     .main {
+         .column(12);
+         width: 100%;
      }
  }

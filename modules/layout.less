@@ -1,0 +1,96 @@
+
+//@import grid-flex.less;
+@magicalNumber: 24px;
+// views:
+//     byline:
+//         region: sidebar-left
+//         template: default/content
+//         sort: 1
+//         data:
+//             meta:
+//                 type: content
+//                 route: block/fallbild
+html.vgrid & {
+	.showGrid();
+}
+html.constantGrid & {
+	.showGrid();
+}
+body { 	//bätter placering av grid
+	html.hgrid & {
+	.showHGrid();
+	}
+}
+.inner-wrap {
+	.container();
+	max-width:1100px;
+
+	html.vgrid & {
+	.showGrid();
+	}
+
+}
+.route-grid {
+	.showGrid();
+}
+.constantGrid {
+	footer-column-wrapper & {
+	.showGrid();
+	}
+}
+.inner-wrap-flash {
+	margin-bottom:@magicalNumber;
+}
+.flash-wrap {
+	height: 8 * @magicalNumber;
+}
+.sidebar-left {
+	.column(2);
+
+	//position:absolute;
+	//left:100px;
+	//top:100px;
+}
+.sidebar-right {
+	.column(2);
+}
+
+.row {			//på nått sätt gör row att menyn hamnar under varandra och att bilder hamnar vid sidan om???????????
+	.row();
+}
+.outer-wrap-header,
+.outer-wrap-main,
+.footer-column-wrapper {
+	margin-bottom: @magicalNumber;
+}
+.footer-column-wrapper {
+	.clearfix();
+}
+.logo-1 {		// detta påverkar inte min sida, antagligen har jag tagit bort logo-1??
+	position:absolute;
+	left:100px;
+	top:100px;
+}
+.site-logo-text {
+	.column(3);
+}
+.navbar2 {
+	.column(9);
+}
+.main {
+	.column(8);
+	//background-color: green;
+	//opacity:0.5;
+}
+
+.footer-column {
+	.column(4);		//ger kolumner bredvid varandra om man man använder grid-float.less inte grid-flex.less
+	//background-color: red;
+	//opacity:0.5;
+}
+.site-footer {
+	.column(12);
+	text-align: center;
+	//background-color: blue;
+	//opacity:0.5;
+}

@@ -1,0 +1,40 @@
+@import "typography-font-families.less";
+@import "typography-sizes.less";
+@import "typography-mixins.less";
+@import "typography-defaults.less";
+
+
+ @fontFamilyHeadings:  @fontFamilyHelvetica;
+ @fontFamilyBody:      @fontFamilyGaramond;
+ @fontFamilyCode:      @fontFamilyCourier;
+ @colorH1BorderBottom: @treeTrunkColor;
+body  {
+    .font();
+    .typographyHeadings();
+    .typographyTextElements();
+    .typographyCodeElements();
+    .typographyListElements();
+    .typographyTableElements();
+    .typographyOtherElements();
+
+
+}
+main {
+    @height:6160px;
+    .calcMargin(@height);
+    margin-bottom:@margin;
+}
+nav div ul {
+	@height:48px;
+	.calcMargin(@height);
+    font-size: 14px;
+	margin-bottom:(@margin) -1px  !important;
+}
+h1 {
+    @height:48px;
+    .calcMargin(@height);
+    padding-bottom:(@margin) -2px  !important;
+}
+.route-typography {
+    .showHGrid();
+}
