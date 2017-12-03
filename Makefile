@@ -39,7 +39,7 @@ VENDORBIN 	= vendor/bin
 NPMBIN		= node_modules/.bin
 
 # LESS and CSS
-LESS 		 	= style.less #style1.less #style2.less
+LESS 		 	= style.less base.less color.less dark.less colorful.less fun.less typography.less
 LESS_MODULES	= modules/
 LESS_OPTIONS 	= --strict-imports --include-path=$(LESS_MODULES)
 CSSLINT_OPTIONS = --quiet
@@ -166,7 +166,7 @@ upgrade-responsive-menu:
 .PHONY: upgrade
 upgrade: upgrade-normalize upgrade-responsive-menu
 	@$(call HELPTEXT,$@)
-	
+
 # target: upgrade-normalize       - Upgrade LESS module - Normalize.
 .PHONY: upgrade-normalize
 upgrade-normalize:

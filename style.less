@@ -1,54 +1,37 @@
 /**
 * Anax Flat theme.
 */
-@import url(modules.less);
+//@import url(modules.less);
+@import url(base.less);
 
-
-
-/** --------------------------------------------------------------
- *  Logo images
- */
-.logo-1 {
-    position: absolute;
-    top: 70px;
-    left: -140px;
-}
-
-.site-logo-text-icon {
-    img {
-        vertical-align: bottom;
-    }
-}
-
-.sidebar {
-    li {
-        padding: 5px;
-    }
-    padding-bottom: 150px;
-
-}
 @treeTrunkColor:#420807;
 @redLeafColor:	#BD4306;
 @orangeLeafColor: #F5672B;
 @yellowishLeafColor:#D86C0A;
 @fadedYellowColor:#FAC947;
-/*html {
-    background-color: @fadedYellowColor;
-}
-main, .sidebar, .footer, .breadcrumb-wrap {
-    a {
-        color:@treeTrunkColor;
-    }
-    a:visited {
-        color:@redLeafColor;
-    }
-}*/
-/*.row {                        //Ändrar färg på länkarna men också i menyer
-    a {
-        color:@treeTrunkColor;
-    }
-    a:visited {
-        color:@redLeafColor;
-    }
+@lightGray:D3C6C6;
+// @back-color:#D3C6C6;
+// @footer-color:#C3AEAE;
+// @navBar-button-color:#FFFFFF;
+// @site-logo-color:#302929;
+@back-color:#FCF3F3;
+@footer-color:#AC9797;
+@navBar-button-color:#FFFDFD;
+@site-logo-color:#302929;
+@text-color:#000000;
 
-}*/
+html {
+	background-color:@back-color;
+}
+body {
+	color: @text-color;
+}
+.outer-wrap-footer { //.site-footer - bara längst ner
+    background-color: @footer-color;
+}
+@navbarItemBgColor: @navBar-button-color;
+
+.site-logo-text a {
+    color:@site-logo-color;
+}
+ //@colorH1BorderBottom: @treeTrunkColor;
