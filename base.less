@@ -1,0 +1,57 @@
+/**
+* Anax Flat theme.
+*/
+@import url(modules.less);
+@import "typography-font-families.less";
+@import "typography-sizes.less";
+@import "typography-mixins.less";
+@import "typography-defaults.less";
+
+@fontFamilyHeadings:  @fontFamilyHelvetica;
+@fontFamilyBody:      @fontFamilyGaramond;
+@fontFamilyCode:      @fontFamilyCourier;
+
+body {
+    .font();
+    .typographyHeadings();
+    .typographyTextElements();
+    .typographyCodeElements();
+    .typographyListElements();
+    .typographyTableElements();
+    .typographyOtherElements();
+}
+
+/** --------------------------------------------------------------
+ *  Logo images
+ */
+.logo-1 {
+    position: absolute;
+    top: 70px;
+    left: -140px;
+}
+
+.site-logo-text-icon {
+    img {
+        vertical-align: bottom;
+    }
+}
+
+.sidebar {
+    li {
+        padding: 5px;
+    }
+    padding-bottom: 150px;
+
+}
+@treeTrunkColor:#420807;
+@redLeafColor:	#BD4306;
+@orangeLeafColor: #F5672B;
+@yellowishLeafColor:#D86C0A;
+@fadedYellowColor:#FAC947;
+ .navbar2 {
+   font-family: inherit;
+}
+
+.site-logo-text a {
+   font-family:inherit;
+}

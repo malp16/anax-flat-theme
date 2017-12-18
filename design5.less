@@ -1,0 +1,138 @@
+@import url(style.less);
+// @back-color:#FCF3F3;
+// @footer-color:#AC9797;
+// @navBar-button-color:#FED2D6;
+// @site-logo-color:#302929;
+// @text-color:#000000;
+
+@back-color:#FCF3F3;
+@footer-color:#AC9797;
+@navBar-button-color:#FED2D6;
+@site-logo-color:#847677;
+
+.inner-wrap-breadcrumb a,
+.outer-wrap-main a,
+.outer-wrap-footer a {
+    color:#B1005D;
+}
+
+.outer-wrap-header {
+    position:relative;
+    width:100%;
+    height:200px;
+    background-color:#AC9797;
+    box-sizing: border-box;
+    padding:30px;
+    margin-bottom: 100px;
+}
+.outer-wrap-header::after {
+    position:absolute;
+    width:100%;
+    height:40%;
+    content:'';
+    z-index:inherit;
+    background-color:#AC9797;
+    top:100%;
+    right:0;
+    bottom:0;
+    left:0;
+    transform-origin:bottom left;
+    transform:skewY(-4deg);
+}
+.navbar2 {
+    transform:skewY(-4deg);
+    margin-top: 15px;
+    //opacity:0.5;
+    z-index:inherit;
+}
+//vrider ner åt höger
+.outer-wrap-footer { //.site-footer - bara längst ner
+    //transform:skewY(4deg); //vrider innehåll men lämnar tomrum under
+    //padding:30px;
+    position:relative;
+    width:100%;
+    //height:200px;
+    //background-color: #921A0D;
+    box-sizing: border-box;
+    padding:30px;
+    margin-bottom: -5%;
+    transform-origin:top left;
+    transform:skewY(4deg);
+ }
+ .outer-wrap-footer::after {
+     position:absolute;
+     width:100%;
+     height:40%;
+     content:'';
+     z-index:inherit;
+     //background-color: green;
+     background-color: #AC9797;
+     top:100%;
+     right:0;
+     bottom:0%;
+     left:0;
+     margin:0;
+     margin-bottom: -5%;
+     transform-origin:top left;
+     transform:skewY(-4deg);
+     // transform-origin:top left;
+     // transform:skewY(4deg);
+
+   }
+     .inner-wrap-footer {
+         position:relative;
+         width:100%;
+         //height:200px;
+         //background-color: #921A0D
+         background-color:transparent;
+         box-sizing: border-box;
+         padding:30px;
+         margin-bottom: 0%;
+         transform-origin:top right;
+         transform:skewY(-4deg);
+     }
+
+// .outer-wrap-footer { //.site-footer - bara längst ner
+//     //transform:skewY(4deg); //vrider innehåll men lämnar tomrum under
+//     //padding:30px;
+//     position:relative;
+//     width:100%;
+//     //height:200px;
+//     //background-color: #921A0D
+//     background-color:#AC9797;
+//     box-sizing: border-box;
+//     padding:30px;
+//     margin-bottom: 0%;
+//     transform-origin:top right;
+//     transform:skewY(-4deg);
+//  }
+ //vrider upp footern och vrider texten tillbaka till normalt
+ // .outer-wrap-footer::before { //.site-footer - bara längst ner
+ //     position:absolute;
+ //     width:100%;
+ //     height:40%;
+ //     content:'';
+ //     z-index:inherit;
+ //     background-color: green;
+ //     top:70%;
+ //     right:0;
+ //     bottom:0%;
+ //     left:0;
+ //     transform-origin:bottom left;
+ //     transform:skewY(4deg);
+ //     // transform-origin:top left;
+ //     // transform:skewY(4deg);
+ //
+ //   }
+ //   .inner-wrap-footer {
+ //       position:relative;
+ //       width:100%;
+ //       //height:200px;
+ //       //background-color: #921A0D
+ //       background-color:transparent;
+ //       box-sizing: border-box;
+ //       padding:30px;
+ //       margin-bottom: 0%;
+ //       transform-origin:top right;
+ //       transform:skewY(4deg);
+ //   }
